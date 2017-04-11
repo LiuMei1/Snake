@@ -8,6 +8,8 @@ public class SPanel extends Panel{
 	private int ROWS;
 	private int COLS;
 	private int BLOCK_SIZE;
+	
+	Snake snake = new Snake();
 
 	public SPanel(int rows, int cols, int blockSize) {
 
@@ -32,5 +34,8 @@ public class SPanel extends Panel{
 	    	 g.drawLine( BLOCK_SIZE*i,0,  BLOCK_SIZE*i,ROWS*BLOCK_SIZE);
 	     }
 //	     g.setColor(c);
+	     
+	     
+	     snake.drow(g);
 	}
 }
