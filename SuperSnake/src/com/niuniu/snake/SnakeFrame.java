@@ -80,7 +80,6 @@ public class SnakeFrame extends Frame{
 		
 		@Override
 		public void keyPressed(KeyEvent e) {
-			// TODO Auto-generated method stub
 			super.keyPressed(e);
 		}
 	}

@@ -38,4 +38,8 @@ public class SPanel extends Panel{
 	     
 	     snake.drow(g);
 	}
-}
+	
+	
+		
+	}
+
