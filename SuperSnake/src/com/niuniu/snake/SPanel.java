@@ -66,6 +66,7 @@ public class SPanel extends JPanel {
 		g.setColor(Color.YELLOW);
 		g.drawString("score:" + score, 5, 20);
 
+		
 		if (gameOver) {
 			g.setFont(new Font("宋体", Font.BOLD, 50));
 			g.drawString("GAME OVER!", 140, 200);
@@ -106,6 +107,7 @@ public class SPanel extends JPanel {
 	private class paintThread implements Runnable {
 
 		private boolean running = true;
+		private int speed = 100;
 
 		@Override
 		public void run() {
@@ -113,7 +115,7 @@ public class SPanel extends JPanel {
 			while (running) {
 				repaint();
 				try {
-					Thread.sleep(100);
+					Thread.sleep(SnakeFrame.speed);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
@@ -124,6 +126,7 @@ public class SPanel extends JPanel {
 		public void gameOver() {
 			running = false;
 		}
+		
 	}
 
 //	public void keyPress(KeyEvent e) {

@@ -41,7 +41,7 @@ public class Egg {
 	}
 
 	public void reApper() {
-		this.row = r.nextInt(SnakeFrame.ROWS) ;
+		this.row = r.nextInt(SnakeFrame.ROWS);
 		this.col = r.nextInt(SnakeFrame.COLS);
 	}
 
