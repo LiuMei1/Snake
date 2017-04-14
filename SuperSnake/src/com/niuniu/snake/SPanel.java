@@ -29,7 +29,6 @@ public class SPanel extends JPanel {
 
 	public SPanel() {
 
-		// addKeyListener(new KeyMoniter());
 	}
 
 	public SPanel(int rows, int cols, int blockSize) {
